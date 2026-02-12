@@ -1,4 +1,4 @@
-library("arrayQualityMetrics")
+library("arrayQM")
 options(error=recover)
 
 

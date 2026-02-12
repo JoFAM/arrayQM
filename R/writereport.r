@@ -41,7 +41,7 @@ makeTitle = function(reporttitle, outdir, params)
 
     ## ------- copy and link the CSS and JavaScript files
     filenames = c("arrayQualityMetrics.css", "arrayQualityMetrics.js")
-    filelocs  = system.file("javascript", filenames, package = "arrayQualityMetrics")
+    filelocs  = system.file("javascript", filenames, package = "arrayQM")
     filelocs[ filelocs!="" ]
     if(length(filelocs)<length(filenames))
         stop(sprintf("Could not find all of: '%s'.", paste(filenames, collapse=", ")))
@@ -204,10 +204,10 @@ reportModule = function(p, module, currentIndex, arrayTable, outdir)
 ##----------------------------------------------------------
 makeEnding = function(p)
   {
-    z = sessionInfo("arrayQualityMetrics")
+    z = sessionInfo("arrayQM")
     version = z$otherPkgs[[1]]$Version
     rversion = sessionInfo()$R.version$version.string
-    session = paste0("This report has been created with arrayQualityMetrics ",
+    session = paste0("This report has been created with arrayQM ",
       version, " under ", rversion, ".")
     hwrite("<hr>", page = p)
     hwrite(session, page = p, style ='font-size:9pt')

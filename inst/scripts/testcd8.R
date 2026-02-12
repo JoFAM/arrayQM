@@ -3,7 +3,7 @@
 ## cd8 is an AffyBatch object created from HuGene ST 1.0
 ##
 
-library("arrayQualityMetrics")
+library("arrayQM")
 options(error=recover)
 
 if(!file.exists("cd8.Rdata")) 

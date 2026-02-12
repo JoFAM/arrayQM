@@ -1,6 +1,6 @@
 %\VignetteIndexEntry{Introduction: microarray quality assessment with arrayQualityMetrics}
 %\VignetteDepends{CCl4,ALLMLL,vsn}
-%\VignettePackage{arrayQualityMetrics}
+%\VignettePackage{arrayQM}
 %\VignetteEngine{knitr::knitr}
 
 \documentclass[11pt]{article}
@@ -20,7 +20,7 @@ BiocStyle:::latex()
 
 \section*{Introduction}
 
-The \Rpackage{arrayQualityMetrics} package produces, through a single
+The \Rpackage{arrayQM} package produces, through a single
 function call, a comprehensive HTML report of \emph{quality metrics}
 about a microarray
 dataset~\cite{Kauffmann:2009a:Bioinf,Kauffmann:2010:Genomics,McCall2010}.
@@ -32,7 +32,7 @@ diagnose batch effects, and thus the quality of the overall dataset.
 The report can be extended to contain further diagnostics through
 additional arguments, and we will see examples for this in Section~\ref{sec:ext}.
 
-The aim of the \Rpackage{arrayQualityMetrics} package is to produce
+The aim of the \Rpackage{arrayQM} package is to produce
 information that is relevant for your decision making - not, to make
 the decision. It will often be applied to two, somewhat distinct, use
 cases: (i) assessing quality of a ``raw'' dataset, in order to get
@@ -137,7 +137,7 @@ your own application, you can call it on the complete data object.}.
 
 %
 <<AffyBatchQM, results="hide">>=
-library("arrayQualityMetrics")
+library("arrayQM")
 arrayQualityMetrics(expressionset = MLL.A[, 1:5],
                     outdir = "Report_for_MLL_A",
                     force = TRUE,
@@ -384,6 +384,6 @@ toLatex(sessionInfo())
 @
 %
 
-\bibliography{arrayQualityMetrics}
+\bibliography{arrayQM}
 
 \end{document}

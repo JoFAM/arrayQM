@@ -1,6 +1,6 @@
 %\VignetteIndexEntry{Advanced topics: Customizing arrayQualityMetrics reports and programmatic processing of the output}
 %\VignetteDepends{CCl4,vsn}
-%\VignettePackage{arrayQualityMetrics}
+%\VignettePackage{arrayQM}
 %\VignetteEngine{knitr::knitr}
 
 \documentclass[11pt]{article}
@@ -50,7 +50,7 @@ are thematically related.
 For the following examples, let us load the needed packages and some data.
 
 <<loading, results="hide">>=
-library("arrayQualityMetrics")
+library("arrayQM")
 library("ALLMLL")
 data("MLL.A")
 @

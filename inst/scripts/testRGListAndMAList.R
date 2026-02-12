@@ -1,7 +1,7 @@
 #------------------------------------------------------------
 # Tests on RGList and MAList objects
 #------------------------------------------------------------
-library("arrayQualityMetrics")
+library("arrayQM")
 library("limma")
 options(error=recover)
 
