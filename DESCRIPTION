@@ -1,9 +1,9 @@
-Package: arrayQualityMetrics
+Package: arrayQM
 Title: Quality metrics report for microarray data sets
-Version: 3.39.1
+Version: 3.39.2
 Author: Audrey Kauffmann, Wolfgang Huber
-Maintainer: Mike Smith <mike.smith@embl.de>
-BugReports: https://github.com/grimbough/arrayQualityMetrics/issues
+Maintainer: Joris Meys <Joris.Meys@UGent.be>
+BugReports: https://github.com/JoFAM/arrayQualityMetrics/issues
 VignetteBuilder: knitr
 Depends:
 Suggests: ALLMLL, CCl4, BiocStyle, knitr
@@ -13,7 +13,7 @@ Imports: affy, affyPLM (>= 1.27.3), Biobase, genefilter,
          utils, vsn (>= 3.23.3), XML, svglite
 Description: This package generates microarray quality metrics reports for
   data in Bioconductor microarray data containers (ExpressionSet, NChannelSet,
-  AffyBatch). One and two color array platforms are supported.
+  AffyBatch). One and two color array platforms are supported. The package is adapted for students following the omics course at faculty Bioscience Engineering, Ghent University. Reliance on beadarray is removed as the package is no longer available. 
 License: LGPL (>= 2)
 biocViews: Microarray, QualityControl, OneChannel, TwoChannel, ReportWriting
 Collate: classes.R affyspecific.r annotateSvg.R arrayQualityMetrics.r
