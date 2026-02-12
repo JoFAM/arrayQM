@@ -7,7 +7,7 @@ BugReports: https://github.com/grimbough/arrayQualityMetrics/issues
 VignetteBuilder: knitr
 Depends:
 Suggests: ALLMLL, CCl4, BiocStyle, knitr
-Imports: affy, affyPLM (>= 1.27.3), beadarray, Biobase, genefilter,
+Imports: affy, affyPLM (>= 1.27.3), Biobase, genefilter,
          graphics, grDevices, grid, gridSVG (>= 1.4-3), Hmisc, hwriter, 
          lattice, latticeExtra, limma, methods, RColorBrewer, setRNG, stats,
          utils, vsn (>= 3.23.3), XML, svglite

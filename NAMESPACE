@@ -4,7 +4,6 @@
 importClassesFrom(affy, AffyBatch)
 importClassesFrom(Biobase, NChannelSet)
 importClassesFrom(Biobase, ExpressionSet)
-importClassesFrom(beadarray, beadLevelData, ExpressionSetIllumina)
 importClassesFrom(limma, MAList, RGList)
 
 ##--------------------------------------------------
